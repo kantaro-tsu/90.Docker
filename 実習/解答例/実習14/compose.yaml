@@ -1,0 +1,6 @@
+services:
+  debian:
+    build: .
+    tty: true
+    volumes:
+      - ./src:/usr/local/src
