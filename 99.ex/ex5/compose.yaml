@@ -1,0 +1,7 @@
+services:
+  comp_nginx:
+    image: nginx:1.22
+    ports:
+      - "8085:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
