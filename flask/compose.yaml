@@ -1,0 +1,11 @@
+services:
+  web:
+    # dockerfileを元にコンテナを作成する場合にbuildを使用する。
+    # dockerfileまでのパスを指定するが今回は同一フォルダなので.になる
+    build: .
+    environment:
+      FLASK_ENV: development
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./src:/usr/src/app

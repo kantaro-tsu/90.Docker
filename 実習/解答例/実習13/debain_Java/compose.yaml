@@ -1,0 +1,4 @@
+services:
+  debian:
+    build: .
+    tty: true
